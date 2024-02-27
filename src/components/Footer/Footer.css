@@ -1,0 +1,68 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .flex1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    text-align: center;
+    margin-top: 0; 
+  }
+  
+  .flex2 {
+    display: flex;
+    background-color: red;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap: 50px;
+  }
+
+  .flex2 a {
+    color: white;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info img,
+  .contact-info p,
+  .flex2 div a {
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .contact-info img,
+  .flex2 div img {
+    width: 20px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .flex2 div {
+    display: flex;
+    align-items: center;
+    gap: 10px
+  }
+
+  @media screen and (max-width: 768px) {
+    .flex2 {
+      flex-direction: column;
+      height: auto;
+      gap: 10px;
+    }
+  
+    .flex2 div {
+      margin-bottom: 10px; /* Add spacing between items */
+    }
+  }
